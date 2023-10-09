@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to bottom, #c92a2a, #250909);
+}
+
+.hidden {
+  display: none;
+}
+
+.Dice-game {
+  /* height: 80vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 2rem auto;
+}
+.game-container {
+  position: relative;
+  display: flex;
+  border-radius: 5px;
+  box-shadow: 0 0 32rem rgba(0, 0, 0, 0.2), 0 0 32rem rgba(0, 0, 0, 0.2);
+}
+
+.player-detail {
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.player {
+  padding: 4rem 8rem;
+  display: flex;
+  flex-direction: column;
+  /* gap: 5.2rem; */
+  justify-content: space-between;
+  font-size: 3rem;
+  width: 40rem;
+  height: 60rem;
+  text-align: center;
+  background-color: #be8d8d;
+}
+.player--active {
+  background-color: rgba(8, 0, 0, 0.363);
+}
+
+.player--winner {
+  background-color: #e6a210;
+}
+
+.score {
+  margin-top: 2rem;
+  font-size: 4.8rem;
+  text-align: center;
+  color: #e03131;
+}
+
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #444;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 400;
+  transition: all 0.2s;
+
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  padding: 0.7rem 2.5rem;
+  border-radius: 50rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+
+.btn-new {
+  top: 10%;
+}
+.btn-roll {
+  top: 70%;
+}
+.btn-hold {
+  top: 80%;
+}
+
+.dice-container {
+  display: flex;
+  /* justify-content: flex-start; */
+
+  gap: 2rem;
+
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translateX(-50%);
+}
+.dice {
+  width: 8rem;
+}
+
+.current-score-holder {
+  background-color: #e03131;
+  padding: 1rem 2rem;
+}
+
+.current-score {
+  margin-top: 2.5rem;
+  color: #000;
+}
